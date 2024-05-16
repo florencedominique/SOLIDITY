@@ -24,3 +24,32 @@ MyToken is a simple ERC20-like token contract implemented in Solidity. This cont
 
 ```solidity
 function mint(address _address, uint _value) public
+
+The mint function creates new tokens and assigns them to the specified address.
+
+Parameters:
+_address: The address to which the newly created tokens will be assigned.
+_value: The number of tokens to be created.
+
+```
+
+### burn
+
+```solidity
+function burn(address _address, uint _value) public
+
+The burn function destroys existing tokens from the specified address.
+
+Parameters:
+
+_address: The address from which the tokens will be burned.
+_value: The number of tokens to be burned.
+Conditions:
+
+The address must have a balance greater than or equal to the number of tokens to be burned.
+
+
+
+
+
+
